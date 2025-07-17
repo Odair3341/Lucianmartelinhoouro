@@ -24,9 +24,9 @@ function App() {
       case 'Despesas':
         return <Despesas />
       case 'Relatórios':
-        return <Relatorios />
+        return <Relatorios clientes={clientes} />
       case 'Backup':
-        return <Backup />
+        return <Backup clientes={clientes} setClientes={setClientes} />
       default:
         return <Dashboard />
     }
